@@ -14,8 +14,8 @@ $groupes = ['01','02','03','04','05','06','07','08','09','10'];
     return [
         'matricule' => $faker->randomNumber(6),
         'email' => $faker->email,
-        'first-name' => $faker->word,
-        'last-name' => $faker->word,
+        'first_name' => $faker->word,
+        'last_name' => $faker->word,
         'adresse' => $faker->address,
         'commune' => $faker->state,
         'wilaya' => $faker->city,

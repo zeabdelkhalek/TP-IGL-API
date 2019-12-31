@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class StudentRepository
  * @package App\Repositories
- * @version December 30, 2019, 6:39 pm UTC
+ * @version December 31, 2019, 7:29 pm UTC
 */
 
 class StudentRepository extends BaseRepository
@@ -19,8 +19,8 @@ class StudentRepository extends BaseRepository
     protected $fieldSearchable = [
         'matricule',
         'email',
-        'first-name',
-        'last-name',
+        'first_name',
+        'last_name',
         'adresse',
         'commune',
         'wilaya',

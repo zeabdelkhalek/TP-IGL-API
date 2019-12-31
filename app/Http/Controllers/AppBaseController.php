@@ -23,6 +23,11 @@ class AppBaseController extends Controller
         return Response::json(ResponseUtil::makeResponse($message, $result));
     }
 
+    public function sendSuccess($message)
+    {
+        return Response::json(ResponseUtil::makeResponse($message , ''));
+    }
+
     public function sendError($error, $code = 404)
     {
         return Response::json(ResponseUtil::makeError($error), $code);

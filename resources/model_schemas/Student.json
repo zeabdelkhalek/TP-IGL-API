@@ -36,7 +36,7 @@
         "inView": true
     },
     {
-        "name": "first-name",
+        "name": "first_name",
         "dbType": "string,191",
         "htmlType": "text",
         "validations": "required",
@@ -48,7 +48,7 @@
         "inView": true
     },
     {
-        "name": "last-name",
+        "name": "last_name",
         "dbType": "string,191",
         "htmlType": "text",
         "validations": "required",
@@ -97,8 +97,8 @@
     },
     {
         "name": "phone",
-        "dbType": "integer,false",
-        "htmlType": null,
+        "dbType": "string,191",
+        "htmlType": "text",
         "validations": "required",
         "searchable": true,
         "fillable": true,

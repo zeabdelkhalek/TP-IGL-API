@@ -17,8 +17,8 @@ class CreateStudentsTable extends Migration
             $table->bigIncrements('id');
             $table->string('matricule');
             $table->string('email')->unique();
-            $table->string('first-name');
-            $table->string('last-name');
+            $table->string('first_name');
+            $table->string('last_name');
             $table->text('adresse');
             $table->string('commune');
             $table->string('wilaya');
