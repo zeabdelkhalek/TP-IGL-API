@@ -30,7 +30,7 @@ select version() ;
 git clone https://github.com/AbdelkhalekESI/TP-IGL-API
 ```
 
-2. Install the necessary dependencies:
+2. Installer les dépendances nécessaires :
 
 ```bash
 composer install
