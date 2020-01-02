@@ -12,6 +12,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
+        "fzaninotto/faker": "^1.4",
         "infyomlabs/laravel-generator": "6.0.x-dev",
         "infyomlabs/coreui-templates": "6.0.x-dev",
         "laravelcollective/html": "^6.0",
