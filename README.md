@@ -92,6 +92,21 @@ phpunit ../../tests/APIs/StudentApiTest
 
 ## Tests Avec Selenium 
 
+### Exigences 
+
+| Exigence                                 | Version |
+| ------------------------------------------- | ------- |
+| [Python](https://www.python.org/downloads/) | `3.6+`  |
+| [Pip](https://pypi.org/project/pip/) | `9.0+`  |
+
+Avant de commancer vérifier bien que l'application est en cours d'éxecution (Front-end et Back-end) :
+
+```bash
+cd Selenium-Test
+pip install selenium
+python script.py
+```
+
 ## Documentation des API 
 
 Vous pouvez accéder au documentation generé automatiquement avec [Laravel Swagger](https://github.com/mtrajano/laravel-swagger) ici `http://127.0.0.1:8000/api/docs`
