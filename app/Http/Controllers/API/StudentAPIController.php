@@ -26,11 +26,36 @@ class StudentAPIController extends AppBaseController
     }
 
     /**
-     * Display a listing of the Student.
-     * GET|HEAD /students
-     *
      * @param Request $request
      * @return Response
+     *
+     * @SWG\Get(
+     *      path="/students",
+     *      summary="Get a listing of the Students.",
+     *      tags={"Student"},
+     *      description="Get all Students",
+     *      produces={"application/json"},
+     *      @SWG\Response(
+     *          response=200,
+     *          description="successful operation",
+     *          @SWG\Schema(
+     *              type="object",
+     *              @SWG\Property(
+     *                  property="success",
+     *                  type="boolean"
+     *              ),
+     *              @SWG\Property(
+     *                  property="data",
+     *                  type="array",
+     *                  @SWG\Items(ref="#/definitions/Student")
+     *              ),
+     *              @SWG\Property(
+     *                  property="message",
+     *                  type="string"
+     *              )
+     *          )
+     *      )
+     * )
      */
     public function index(Request $request)
     {
@@ -44,12 +69,42 @@ class StudentAPIController extends AppBaseController
     }
 
     /**
-     * Store a newly created Student in storage.
-     * POST /students
-     *
      * @param CreateStudentAPIRequest $request
-     *
      * @return Response
+     *
+     * @SWG\Post(
+     *      path="/students",
+     *      summary="Store a newly created Student in storage",
+     *      tags={"Student"},
+     *      description="Store Student",
+     *      produces={"application/json"},
+     *      @SWG\Parameter(
+     *          name="body",
+     *          in="body",
+     *          description="Student that should be stored",
+     *          required=false,
+     *          @SWG\Schema(ref="#/definitions/Student")
+     *      ),
+     *      @SWG\Response(
+     *          response=200,
+     *          description="successful operation",
+     *          @SWG\Schema(
+     *              type="object",
+     *              @SWG\Property(
+     *                  property="success",
+     *                  type="boolean"
+     *              ),
+     *              @SWG\Property(
+     *                  property="data",
+     *                  ref="#/definitions/Student"
+     *              ),
+     *              @SWG\Property(
+     *                  property="message",
+     *                  type="string"
+     *              )
+     *          )
+     *      )
+     * )
      */
     public function store(CreateStudentAPIRequest $request)
     {
@@ -61,12 +116,42 @@ class StudentAPIController extends AppBaseController
     }
 
     /**
-     * Display the specified Student.
-     * GET|HEAD /students/{id}
-     *
      * @param int $id
-     *
      * @return Response
+     *
+     * @SWG\Get(
+     *      path="/students/{id}",
+     *      summary="Display the specified Student",
+     *      tags={"Student"},
+     *      description="Get Student",
+     *      produces={"application/json"},
+     *      @SWG\Parameter(
+     *          name="id",
+     *          description="id of Student",
+     *          type="integer",
+     *          required=true,
+     *          in="path"
+     *      ),
+     *      @SWG\Response(
+     *          response=200,
+     *          description="successful operation",
+     *          @SWG\Schema(
+     *              type="object",
+     *              @SWG\Property(
+     *                  property="success",
+     *                  type="boolean"
+     *              ),
+     *              @SWG\Property(
+     *                  property="data",
+     *                  ref="#/definitions/Student"
+     *              ),
+     *              @SWG\Property(
+     *                  property="message",
+     *                  type="string"
+     *              )
+     *          )
+     *      )
+     * )
      */
     public function show($id)
     {
@@ -81,13 +166,50 @@ class StudentAPIController extends AppBaseController
     }
 
     /**
-     * Update the specified Student in storage.
-     * PUT/PATCH /students/{id}
-     *
      * @param int $id
      * @param UpdateStudentAPIRequest $request
-     *
      * @return Response
+     *
+     * @SWG\Put(
+     *      path="/students/{id}",
+     *      summary="Update the specified Student in storage",
+     *      tags={"Student"},
+     *      description="Update Student",
+     *      produces={"application/json"},
+     *      @SWG\Parameter(
+     *          name="id",
+     *          description="id of Student",
+     *          type="integer",
+     *          required=true,
+     *          in="path"
+     *      ),
+     *      @SWG\Parameter(
+     *          name="body",
+     *          in="body",
+     *          description="Student that should be updated",
+     *          required=false,
+     *          @SWG\Schema(ref="#/definitions/Student")
+     *      ),
+     *      @SWG\Response(
+     *          response=200,
+     *          description="successful operation",
+     *          @SWG\Schema(
+     *              type="object",
+     *              @SWG\Property(
+     *                  property="success",
+     *                  type="boolean"
+     *              ),
+     *              @SWG\Property(
+     *                  property="data",
+     *                  ref="#/definitions/Student"
+     *              ),
+     *              @SWG\Property(
+     *                  property="message",
+     *                  type="string"
+     *              )
+     *          )
+     *      )
+     * )
      */
     public function update($id, UpdateStudentAPIRequest $request)
     {
@@ -106,14 +228,42 @@ class StudentAPIController extends AppBaseController
     }
 
     /**
-     * Remove the specified Student from storage.
-     * DELETE /students/{id}
-     *
      * @param int $id
-     *
-     * @throws \Exception
-     *
      * @return Response
+     *
+     * @SWG\Delete(
+     *      path="/students/{id}",
+     *      summary="Remove the specified Student from storage",
+     *      tags={"Student"},
+     *      description="Delete Student",
+     *      produces={"application/json"},
+     *      @SWG\Parameter(
+     *          name="id",
+     *          description="id of Student",
+     *          type="integer",
+     *          required=true,
+     *          in="path"
+     *      ),
+     *      @SWG\Response(
+     *          response=200,
+     *          description="successful operation",
+     *          @SWG\Schema(
+     *              type="object",
+     *              @SWG\Property(
+     *                  property="success",
+     *                  type="boolean"
+     *              ),
+     *              @SWG\Property(
+     *                  property="data",
+     *                  type="string"
+     *              ),
+     *              @SWG\Property(
+     *                  property="message",
+     *                  type="string"
+     *              )
+     *          )
+     *      )
+     * )
      */
     public function destroy($id)
     {

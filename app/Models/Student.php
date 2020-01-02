@@ -5,21 +5,83 @@ namespace App\Models;
 use Eloquent as Model;
 
 /**
- * Class Student
- * @package App\Models
- * @version December 31, 2019, 7:29 pm UTC
- *
- * @property string matricule
- * @property string email
- * @property string first_name
- * @property string last_name
- * @property string adresse
- * @property string commune
- * @property string wilaya
- * @property string phone
- * @property string promo
- * @property string section
- * @property string groupe
+ * @SWG\Definition(
+ *      definition="Student",
+ *      required={""},
+ *      @SWG\Property(
+ *          property="id",
+ *          description="id",
+ *          type="integer",
+ *          format="int32"
+ *      ),
+ *      @SWG\Property(
+ *          property="matricule",
+ *          description="matricule",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="email",
+ *          description="email",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="first_name",
+ *          description="first_name",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="last_name",
+ *          description="last_name",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="adresse",
+ *          description="adresse",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="commune",
+ *          description="commune",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="wilaya",
+ *          description="wilaya",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="phone",
+ *          description="phone",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="promo",
+ *          description="promo",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="section",
+ *          description="section",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="groupe",
+ *          description="groupe",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="created_at",
+ *          description="created_at",
+ *          type="string",
+ *          format="date-time"
+ *      ),
+ *      @SWG\Property(
+ *          property="updated_at",
+ *          description="updated_at",
+ *          type="string",
+ *          format="date-time"
+ *      )
+ * )
  */
 class Student extends Model
 {

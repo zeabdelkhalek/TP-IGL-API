@@ -17,10 +17,10 @@
         "infyomlabs/coreui-templates": "6.0.x-dev",
         "laravelcollective/html": "^6.0",
         "doctrine/dbal": "~2.3",
-        "appointer/swaggervel": "dev-master",
         "infyomlabs/swagger-generator": "dev-master"
     },
     "require-dev": {
+        "appointer/swaggervel": "^2.5",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
