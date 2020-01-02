@@ -28,22 +28,24 @@ select version() ;
 
 `git clone https://github.com/AbdelkhalekESI/TP-IGL-API`
 
-2 - Install the necessary dependencies:
+2. Install the necessary dependencies:
 ```bash
 composer install
 ```
 
-3 - Créez votre fichier `.env` à partir de` .env.example` et générez une clé d'application (n'oubliez pas de le configurer avec la base de données):
+3. Créez votre fichier `.env` à partir de` .env.example` et générez une clé d'application (n'oubliez pas de le configurer avec la base de données):
 
 ```bash
 cp .env .env.example
 php artisan key:generate  
 ```
-4 - Migrer la base de données :
+
+4. Migrer la base de données :
 ```bash
 php artisan migrate 
 ```
-5 - Enfin, exécutez le serveur :
+
+5. Enfin, exécutez le serveur :
 
 ```bash
 php artisan serve
@@ -68,6 +70,20 @@ $ docker-compose up -d --build database && docker-compose up -d --build web && d
 3. Assurez-vous que vous exécutez cette commande dans le dossier racine de votre application laravel. Cette commande crée vos images de conteneur et les démarre enfin. Si tout se déroule comme prévu, vous devriez pouvoir accéder à votre application laravel exécutée à l'intérieur de votre conteneur à: `http://127.0.0.1:80`
 
 ## Les Tests Unitaires 
+
+Dans cette application on a tester les requêtes avec `phpunit` , les requêtes qui sont testés sont :
+
+- Ajouter un nouveau étudiant 
+- Afficher les informations d'un étudaint 
+- Modifier les informations d'un étudiant 
+- Supprimer un étudiant 
+
+Pour lancer les tests on exécute cette commande :
+
+```bash
+cd vendor/bin
+phpunit ../../tests/APIs/StudentApiTest
+```
 
 ## Tests Avec Selenium 
 
