@@ -43,9 +43,10 @@ cp .env .env.example
 php artisan key:generate  
 ```
 
-4. Migrer la base de données :
+4. Migrer la base de données et la remplir avec des données aléatoires:
 ```bash
 php artisan migrate 
+php artisan db:seed
 ```
 
 5. Enfin, exécutez le serveur :
