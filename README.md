@@ -26,9 +26,12 @@ select version() ;
 
 1. Cloner le repository :
 
-`git clone https://github.com/AbdelkhalekESI/TP-IGL-API`
+```bash
+git clone https://github.com/AbdelkhalekESI/TP-IGL-API
+```
 
 2. Install the necessary dependencies:
+
 ```bash
 composer install
 ```
@@ -59,12 +62,14 @@ Obtenir une instance locale de ce projet est très rapide en utilisant [docker-c
 
 1. Cloner le repository :
 
-`git clone https://github.com/AbdelkhalekESI/TP-IGL-API/`
+```bash
+git clone https://github.com/AbdelkhalekESI/TP-IGL-API/
+```
 
 2. Créez l'image de l'application et exécutez les services (Nginx,MySQL,app) :
 
 ```bash
-$ docker-compose up -d --build database && docker-compose up -d --build web && docker-compose up -d --build app 
+docker-compose up -d --build database && docker-compose up -d --build web && docker-compose up -d --build app 
 ```
 
 3. Assurez-vous que vous exécutez cette commande dans le dossier racine de votre application laravel. Cette commande crée vos images de conteneur et les démarre enfin. Si tout se déroule comme prévu, vous devriez pouvoir accéder à votre application laravel exécutée à l'intérieur de votre conteneur à: `http://127.0.0.1:80`
