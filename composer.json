@@ -9,18 +9,18 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "appointer/swaggervel": "^2.5",
+        "doctrine/dbal": "~2.3",
         "fideloper/proxy": "^4.0",
+        "fzaninotto/faker": "^1.4",
+        "infyomlabs/coreui-templates": "6.0.x-dev",
+        "infyomlabs/laravel-generator": "6.0.x-dev",
+        "infyomlabs/swagger-generator": "dev-master",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
-        "fzaninotto/faker": "^1.4",
-        "infyomlabs/laravel-generator": "6.0.x-dev",
-        "infyomlabs/coreui-templates": "6.0.x-dev",
-        "laravelcollective/html": "^6.0",
-        "doctrine/dbal": "~2.3",
-        "infyomlabs/swagger-generator": "dev-master"
+        "laravelcollective/html": "^6.0"
     },
     "require-dev": {
-        "appointer/swaggervel": "^2.5",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
