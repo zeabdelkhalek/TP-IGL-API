@@ -49,7 +49,7 @@ php artisan migrate
 php artisan db:seed
 ```
 
-5. Enfin, exécutez le serveur :
+5. Enfin, exécuter le serveur :
 
 ```bash
 php artisan serve
@@ -67,20 +67,20 @@ Obtenir une instance locale de ce projet est très rapide en utilisant [docker-c
 git clone https://github.com/AbdelkhalekESI/TP-IGL-API/
 ```
 
-2. Créez l'image de l'application et exécutez les services (Nginx,MySQL,app) :
+2. Créer l'image de l'application et exécuter les services (Nginx,MySQL,app) :
 
 ```bash
 docker-compose up -d --build database && docker-compose up -d --build web && docker-compose up -d --build app 
 ```
 
-3. Assurez-vous que vous exécutez cette commande dans le dossier racine de votre application laravel. Cette commande crée vos images de conteneur et les démarre enfin. Si tout se déroule comme prévu, vous devriez pouvoir accéder à votre application laravel exécutée à l'intérieur de votre conteneur à: `http://127.0.0.1:80`
+3. Assurer vous que vous êtes entrain d'exécuter cette commande dans le dossier racine de votre application laravel. Cette commande crée vos images de conteneur et les démarre enfin. Si tout se déroule comme prévu, vous devrier pouvoir accéder à votre application laravel exécutée à l'intérieur de votre conteneur à: `http://127.0.0.1:80`
 
 ## Les Tests Unitaires 
 
-Dans cette application on a tester les requêtes avec `phpunit` , les requêtes qui sont testés sont :
+Dans cette application on a testé les requêtes avec `phpunit` , les requêtes qui sont testées sont :
 
 - Ajouter un nouveau étudiant 
-- Afficher les informations d'un étudaint 
+- Afficher les informations d'un étudiant 
 - Modifier les informations d'un étudiant 
 - Supprimer un étudiant 
 
@@ -110,7 +110,7 @@ python script.py
 
 ## Documentation des API 
 
-Vous pouvez accéder au documentation generé automatiquement avec [Laravel Swagger](https://github.com/mtrajano/laravel-swagger) ici `http://127.0.0.1:8000/api/docs`
+Vous pouvez accéder à la documentation généré automatiquement à partir de [Laravel Swagger](https://github.com/mtrajano/laravel-swagger) ici `http://127.0.0.1:8000/api/docs`
 
 et voici une capture pour tous les APIs du Model Etudiant : 
 ![Swagger API](/Screenshots/screen.png)
