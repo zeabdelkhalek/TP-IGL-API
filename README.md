@@ -93,3 +93,8 @@ phpunit ../../tests/APIs/StudentApiTest
 ## Tests Avec Selenium 
 
 ## Documentation des API 
+
+Vous pouvez accéder au documentation generé automatiquement avec [Laravel Swagger](https://github.com/mtrajano/laravel-swagger) ici `http://127.0.0.1:8000/api/docs`
+
+et voici une capture pour tous les APIs du Model Etudiant : 
+![Swagger API](/Screenshots/screen.png)
