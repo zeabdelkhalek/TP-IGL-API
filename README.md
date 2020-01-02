@@ -100,7 +100,7 @@ phpunit ../../tests/APIs/StudentApiTest
 | [Python](https://www.python.org/downloads/) | `3.6+`  |
 | [Pip](https://pypi.org/project/pip/) | `9.0+`  |
 
-Avant de commancer vérifier bien que l'application est en cours d'éxecution (Front-end et Back-end) :
+Avant de commancer vérifier bien que l'application est en cours d'éxecution (Front-end et Back-end) et lancer ces commandes :
 
 ```bash
 cd Selenium-Test
